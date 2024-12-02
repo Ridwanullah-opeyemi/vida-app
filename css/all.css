@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.inline-component {
+  display: inline;
+}
+.block-component {
+  display: block;
+}
+.flex-container {
+  display: flex;
+}
+.grid-container {
+  display: grid;
+}
+.inline_block-component {
+  display: inline-block;
+}
+.absolute-component {
+  position: absolute;
+}
+.relative-component {
+  position: relative;
+}
+.fixed_component {
+  position: fixed;
+}
+.sticky-component {
+  position: sticky;
+}
+.darken_component {
+  transition: 0.6s;
+}
+.hover-border-animation1 {
+  border-radius: 3px;
+}
+.hover-border-animation1:hover {
+  border: 1px white solid;
+}
+.hover-border-animation2 {
+  border-radius: 5px;
+}
+.hover-border-animation2:hover {
+  box-shadow: 2px 3px 10px 0;
+}
+
+.top_header {
+  height: 63px;
+  width: 100%;
+  background-color: rgb(16, 79, 16);
+  align-items: center;
+}
+.header_logo {
+  width: 12%;
+  height: 65%;
+  background-color: white;
+  margin-left: 15px;
+}
+.top_header_deliveredCountry {
+  width: 17%;
+  height: 65%;
+  background-color: white;
+  margin: 5px;
+}
+.searchbox {
+  width: 70%;
+  height: 70%;
+  background-color: white;
+  margin: 2px;
+}
+.top_header_lang {
+  width: 8%;
+  height: 65%;
+  background-color: white;
+  margin: 2px;
+}
+.top_header_account {
+  width: 14%;
+  height: 65%;
+  background-color: white;
+  margin: 2px;
+}
+.top_header_orders {
+  width: 8%;
+  height: 65%;
+  background-color: white;
+  margin: 2px;
+}
+.top_header_carts {
+  width: 8%;
+  height: 65%;
+  background-color: white;
+  margin: 2px;
+}
+.header_menu {
+  height: 38px;
+  width: 100%;
+  background-color: rgb(12, 84, 81);
+}
+.header_menu ul {
+  align-items: center;
+  height: 100%;
+}
+.header_menu_link {
+  margin: 0 5px 0 5px;
+  padding: 0 10px 0 10px;
+  height: 94%;
+  align-items: center;
+}
+.header_menu_link a {
+  color: white;
+}
+.underline_none_a {
+  text-decoration-line: none;
+}
+.full_side_menu_container {
+  position: fixed;
+  width: 0;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  transition: 0.5s;
+  transition-property: width; /*animation이 적용되는 css tag를 구체적으로 명시*/
+}
+.full_side_menu_container a {
+  font-size: 36px;
+  text-decoration: none;
+  display: block;
+  transition: 0.5s;
+}
+.full_side_menu_header {
+  align-items: center;
+  background-color: rgb(13, 20, 47);
+  padding: 5px;
+  color: white;
+}
+.full_side_menu_icon {
+  padding: 0 10px 3px 10px;
+}
+.full_side_menu_profile {
+  overflow: hidden;
+  white-space: nowrap; /*div 크기가 줄어들었을때 자동 줄바꿈 해제*/
+  flex: 1;
+  text-overflow: ellipsis;
+}
+.full_side_menu_main {
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+}
+.full_side_menu_main a {
+  align-items: center;
+  color: black;
+  padding: 0px 30px 20px 30px;
+  font-size: 20px;
+}
+#full_side_menu_close_btn {
+  /* display: none; */
+  padding: 0 20px 0 20px;
+  top: 7px;
+  left: 270px;
+  font-size: 36px;
+  margin-left: 50px;
+  background-color: rgb(101, 60, 60);
+}
