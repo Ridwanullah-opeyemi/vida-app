@@ -1,0 +1,185 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIDA - Selling App</title>
+    <link rel="stylesheet" href="../style/load.css">
+    <link rel="stylesheet" href="../style/product.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .menu-bar {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        .menu-bar a {
+            float: left;
+            display: block;
+            color: white;
+            padding: 14px 20px;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .menu-bar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .menu-bar .cart {
+            float: right;
+            padding: 14px 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .menu-bar .cart img {
+            width: 30px;
+            height: auto;
+            margin-right: 8px;
+        }
+
+        .menu-bar .cart .cart-count {
+            font-size: 1.2rem;
+            color: white;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .products-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .product-container {
+            width: 250px;
+            border: 1px solid #ddd;
+            padding: 15px;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        .product-image {
+            width: 100%;
+            height: auto;
+        }
+
+        .product-name {
+            font-size: 1.1rem;
+            margin-top: 10px;
+        }
+
+        .product-price {
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+
+        .product-quantity-container select {
+            margin-top: 10px;
+        }
+
+        .add-to-cart-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            width: 100%;
+            border: none;
+            cursor: pointer;
+        }
+
+        .add-to-cart-button:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Welcome to VIDA Selling App</h1>
+    </header>
+
+    <!-- Menu Bar -->
+    <div class="menu-bar">
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">Sales</a>
+        <a href="#">Analytics</a>
+        <a href="#">Settings</a>
+
+        <!-- Cart Icon with item count -->
+        <div class="cart">
+            <img src="../image/cart-icon.png" alt="Cart">
+            <span class="cart-count">0</span> <!-- Dynamic cart count can be added here -->
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="products-grid">
+            <!-- Example Product -->
+            <div class="product-container">
+                <div class="product-image-container">
+                    <img class="product-image" src="../image/backpack.jpg" alt="Product Image">
+                </div>
+
+                <div class="product-name">Backpack</div>
+
+                <div class="product-price">$6786</div>
+
+                <div class="product-quantity-container">
+                    <select>
+                        <option selected value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+
+                <button class="add-to-cart-button">Add to Cart</button>
+            </div>
+
+            <!-- Repeat for more products -->
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>VIDA - Your Selling App</p>
+    </footer>
+
+    <script src="../script/load.js"></script>
+</body>
+
+</html>

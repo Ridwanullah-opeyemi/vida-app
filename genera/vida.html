@@ -1,0 +1,508 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style/load.css">
+    <link rel="stylesheet" href="../style/product.css">
+    <link rel="stylesheet" href="../style/vida.css">
+    <style>
+        .vida-section {
+            width: 180px;
+            flex-shrink: 0;
+            display: flex;
+            justify-content: end;
+        }
+
+        .orders-link {
+            color: white;
+        }
+
+        .returns-text {
+            display: block;
+            font-size: 13px;
+        }
+
+        .orders-text {
+            display: block;
+            font-size: 15px;
+            font-weight: 700;
+        }
+
+        .cart-link {
+            color: white;
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+
+        .cart-icon {
+            width: 50px;
+        }
+
+        .cart-text {
+            margin-top: 12px;
+            font-size: 15px;
+            font-weight: 700;
+        }
+
+        .cart-quantity {
+            color: rgb(240, 136, 4);
+            font-size: 16px;
+            font-weight: 700;
+
+            position: absolute;
+            top: 10px;
+            left: 35px;
+
+            width: 26px;
+            text-align: center;
+        }
+
+        .header-link {
+            display: inline-block;
+            padding: 6px;
+            border-radius: 2px;
+            cursor: pointer;
+            text-decoration: none;
+            border: 1px solid rgba(0, 0, 0, 0);
+        }
+
+        .header-link:hover {
+            border: 1px solid white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sec1">
+        <header>
+            <h1>Welcome to the Selling App Dashboard</h1>
+        </header>
+
+        <!-- Menu Bar -->
+        <div class="menu-bar">
+            <div>
+                <a href="#">Home</a>
+                <a href="#">Products</a>
+                <a href="#">Sales</a>
+                <a href="#">Analytics</a>
+                <a href="#">Settings</a>
+            </div>
+            <div>
+                <div class="vida-section">
+                    <a class="orders-link header-link" href="orders.html">
+                        <span class="returns-text">Returns</span>
+                        <span class="orders-text">& Orders</span>
+                    </a>
+
+                    <a class="cart-link header-link" href="checkout.html">
+                        <img class="cart-icon" src="../image/cart-icon.png">
+                        <div class="cart-quantity js-cart-quantity">0</div>
+                        <div class="cart-text">Cart</div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Main Content -->
+        <div class="container">
+            <div class="main">
+                <div class="products-grid js-products-grid">
+                    <div class="product-container">
+                        <div class="product-image-container">
+                            <img class="product-image" src="../image/backpack.jpg" alt="Product Image">
+                        </div>
+
+                        <div class="product-name limit-text-to-2-lines">
+                            backpack
+                        </div>
+
+                        <div class="product-rating-container">
+                            <img class="product-rating-stars" src="../image/ratings/rating-50.png" alt="Stars">
+                            <div class="product-rating-count link-primary">
+                                85
+                            </div>
+                        </div>
+
+                        <div class="product-price">
+                            $6786
+                        </div>
+
+                        <div class="product-quantity-container">
+                            <select>
+                                <option selected value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                        </div>
+
+
+
+                        <div class="product-spacer"></div>
+
+                        <div class="added-to-cart">
+                            <img src="images/icons/checkmark.png" alt="Checkmark">
+                            Added
+                        </div>
+
+                        <button class="add-to-cart-button button-primary js-add-to-cart"
+                            data-product-id="${product.id}">
+                            Add to Cart
+                        </button>
+                    </div>
+                    <div class="product-container">
+                        <div class="product-image-container">
+                            <img class="product-image" src="../image/backpack.jpg" alt="Product Image">
+                        </div>
+
+                        <div class="product-name limit-text-to-2-lines">
+                            backpack
+                        </div>
+
+                        <div class="product-rating-container">
+                            <img class="product-rating-stars" src="../image/ratings/rating-45.png" alt="Stars">
+                            <div class="product-rating-count link-primary">
+                                85
+                            </div>
+                        </div>
+
+                        <div class="product-price">
+                            $6786
+                        </div>
+
+                        <div class="product-quantity-container">
+                            <select>
+                                <option selected value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                        </div>
+
+
+
+                        <div class="product-spacer"></div>
+
+                        <div class="added-to-cart">
+                            <img src="images/icons/checkmark.png" alt="Checkmark">
+                            Added
+                        </div>
+
+                        <button class="add-to-cart-button button-primary js-add-to-cart"
+                            data-product-id="${product.id}">
+                            Add to Cart
+                        </button>
+                    </div>
+                    <div class="product-container">
+                        <div class="product-image-container">
+                            <img class="product-image" src="../image/backpack.jpg" alt="Product Image">
+                        </div>
+
+                        <div class="product-name limit-text-to-2-lines">
+                            backpack
+                        </div>
+
+                        <div class="product-rating-container">
+                            <img class="product-rating-stars" src="../image/ratings/rating-40.png" alt="Stars">
+                            <div class="product-rating-count link-primary">
+                                85
+                            </div>
+                        </div>
+
+                        <div class="product-price">
+                            $6786
+                        </div>
+
+                        <div class="product-quantity-container">
+                            <select>
+                                <option selected value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                        </div>
+
+
+
+                        <div class="product-spacer"></div>
+
+                        <div class="added-to-cart">
+                            <img src="images/icons/checkmark.png" alt="Checkmark">
+                            Added
+                        </div>
+
+                        <button class="add-to-cart-button button-primary js-add-to-cart"
+                            data-product-id="${product.id}">
+                            Add to Cart
+                        </button>
+                    </div>
+                    <div class="product-container">
+                        <div class="product-image-container">
+                            <img class="product-image" src="../image/backpack.jpg" alt="Product Image">
+                        </div>
+
+                        <div class="product-name limit-text-to-2-lines">
+                            backpack
+                        </div>
+
+                        <div class="product-rating-container">
+                            <img class="product-rating-stars" src="../image/ratings/rating-35.png" alt="Stars">
+                            <div class="product-rating-count link-primary">
+                                85
+                            </div>
+                        </div>
+
+                        <div class="product-price">
+                            $6786
+                        </div>
+
+                        <div class="product-quantity-container">
+                            <select>
+                                <option selected value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                        </div>
+
+
+
+                        <div class="product-spacer"></div>
+
+                        <div class="added-to-cart">
+                            <img src="images/icons/checkmark.png" alt="Checkmark">
+                            Added
+                        </div>
+
+                        <button class="add-to-cart-button button-primary js-add-to-cart"
+                            data-product-id="${product.id}">
+                            Add to Cart
+                        </button>
+                    </div>
+                    <div class="product-container">
+                        <div class="product-image-container">
+                            <img class="product-image" src="../image/backpack.jpg" alt="Product Image">
+                        </div>
+
+                        <div class="product-name limit-text-to-2-lines">
+                            backpack
+                        </div>
+
+                        <div class="product-rating-container">
+                            <img class="product-rating-stars" src="../image/ratings/rating-30.png" alt="Stars">
+                            <div class="product-rating-count link-primary">
+                                85
+                            </div>
+                        </div>
+
+                        <div class="product-price">
+                            $6786
+                        </div>
+
+                        <div class="product-quantity-container">
+                            <select>
+                                <option selected value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                        </div>
+
+
+
+                        <div class="product-spacer"></div>
+
+                        <div class="added-to-cart">
+                            <img src="images/icons/checkmark.png" alt="Checkmark">
+                            Added
+                        </div>
+
+                        <button class="add-to-cart-button button-primary js-add-to-cart"
+                            data-product-id="${product.id}">
+                            Add to Cart
+                        </button>
+                    </div>
+                    <div class="product-container">
+                        <div class="product-image-container">
+                            <img class="product-image" src="../image/backpack.jpg" alt="Product Image">
+                        </div>
+
+                        <div class="product-name limit-text-to-2-lines">
+                            backpack
+                        </div>
+
+                        <div class="product-rating-container">
+                            <img class="product-rating-stars" src="../image/ratings/rating-25.png" alt="Stars">
+                            <div class="product-rating-count link-primary">
+                                85
+                            </div>
+                        </div>
+
+                        <div class="product-price">
+                            $6786
+                        </div>
+
+                        <div class="product-quantity-container">
+                            <select>
+                                <option selected value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                        </div>
+
+
+
+                        <div class="product-spacer"></div>
+
+                        <div class="added-to-cart">
+                            <img src="images/icons/checkmark.png" alt="Checkmark">
+                            Added
+                        </div>
+
+                        <button class="add-to-cart-button button-primary js-add-to-cart"
+                            data-product-id="${product.id}">
+                            Add to Cart
+                        </button>
+                    </div>
+                    <div class="product-container">
+                        <div class="product-image-container">
+                            <img class="product-image" src="../image/backpack.jpg" alt="Product Image">
+                        </div>
+
+                        <div class="product-name limit-text-to-2-lines">
+                            backpack
+                        </div>
+
+                        <div class="product-rating-container">
+                            <img class="product-rating-stars" src="../image/ratings/rating-20.png" alt="Stars">
+                            <div class="product-rating-count link-primary">
+                                85
+                            </div>
+                        </div>
+
+                        <div class="product-price">
+                            $6786
+                        </div>
+
+                        <div class="product-quantity-container">
+                            <select>
+                                <option selected value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                        </div>
+
+
+
+                        <div class="product-spacer"></div>
+
+                        <div class="added-to-cart">
+                            <img src="images/icons/checkmark.png" alt="Checkmark">
+                            Added
+                        </div>
+
+                        <button class="add-to-cart-button button-primary js-add-to-cart"
+                            data-product-id="${product.id}">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <section class="featured-products">
+            <h2>Featured Products</h2>
+            <div class="product-card">
+                <img src="../image/adults-plain-cotton-tshirt-2-pack-teal.jpg" alt="Product 1">
+                <h3>adults-plain-cotton-tshirt-2-pack-teal</h3>
+                <p>$25.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="../image/black-2-slot-toaster.jpg" alt="Product 2">
+                <h3>black-2-slot-toaster</h3>
+                <p>$45.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="../image/men-cozy-fleece-zip-up-hoodie-red.jpg" alt="Product 3">
+                <h3>men-cozy-fleece-zip-up-hoodie-red</h3>
+                <p>$15.99</p>
+                <button>Add to Cart</button>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2024 Your Shopping Store</p>
+            <p>
+                <a href="./privacyPolicy.html">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="./about.html">About</a>
+                <a href="#">Help</a>
+            </p>
+        </footer>
+    </div>
+
+
+    <div id="load" class="sec2">
+        <div id="loads" class="loadf">0</div>
+    </div>
+
+    <script src="../script/load.js"></script>
+</body>
+
+</html>

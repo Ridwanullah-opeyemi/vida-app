@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.sec1 {
+    display: none;
+}
+
+header {
+    background-color: #4CAF50;
+    color: #ffffff;
+    padding: 15px;
+    text-align: center;
+}
+
+.menu-bar {
+    background-color: #333;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-bar a {
+    float: left;
+    display: block;
+    color: #ffffff;
+    padding: 14px 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.menu-bar a:hover {
+    background-color: #dddddd;
+    color: black;
+}
+
+.container {
+    padding: 20px;
+}
+
+.chart-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+/* Featured Products Section */
+.featured-products {
+    padding: 60px 40px;
+    background-color: #ffffff;
+    text-align: center;
+    /* color: #fff; */
+}
+
+.featured-products h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+.product-card {
+    display: inline-block;
+    width: 200px;
+    margin: 20px;
+    padding: 15px;
+    height: 400px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-card img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.product-card h3 {
+    font-size: 22px;
+    margin-top: 15px;
+}
+
+.product-card p {
+    font-size: 18px;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.product-card button {
+    padding: 10px 20px;
+    background-color: #46986c;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.product-card button:hover {
+    background-color: #255c36;
+}
+
+/* Footer */
+.footer {
+    background-color: #4CAF50;
+    color: white;
+    padding: 30px 40px;
+    text-align: center;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.footer a:hover {
+    color: #0a74da;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cta-buttons button {
+        margin-bottom: 10px;
+    }
+
+    .featured-products {
+        padding: 40px 20px;
+    }
+
+    .product-card {
+        width: 90%;
+    }
+    .product-card img {
+        width: 100%;
+        height: 100%;
+    }
+}
