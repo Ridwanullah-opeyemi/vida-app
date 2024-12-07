@@ -8,69 +8,8 @@
     <link rel="stylesheet" href="../style/product.css">
     <link rel="stylesheet" href="../style/vida.css">
     <style>
-        .vida-section {
-            width: 180px;
-            flex-shrink: 0;
-            display: flex;
-            justify-content: end;
-        }
-
-        .orders-link {
-            color: white;
-        }
-
-        .returns-text {
-            display: block;
-            font-size: 13px;
-        }
-
-        .orders-text {
-            display: block;
-            font-size: 15px;
-            font-weight: 700;
-        }
-
-        .cart-link {
-            color: white;
-            display: flex;
-            align-items: center;
-            position: relative;
-        }
-
-        .cart-icon {
-            width: 50px;
-        }
-
-        .cart-text {
-            margin-top: 12px;
-            font-size: 15px;
-            font-weight: 700;
-        }
-
-        .cart-quantity {
-            color: rgb(240, 136, 4);
-            font-size: 16px;
-            font-weight: 700;
-
-            position: absolute;
-            top: 10px;
-            left: 35px;
-
-            width: 26px;
-            text-align: center;
-        }
-
-        .header-link {
-            display: inline-block;
-            padding: 6px;
-            border-radius: 2px;
-            cursor: pointer;
-            text-decoration: none;
-            border: 1px solid rgba(0, 0, 0, 0);
-        }
-
-        .header-link:hover {
-            border: 1px solid white;
+        header img {
+            width: 80px;
         }
     </style>
 </head>
@@ -78,7 +17,7 @@
 <body>
     <div class="sec1">
         <header>
-            <h1>Welcome to the Selling App Dashboard</h1>
+            <h1><img src="../image/l2.png" alt="logo">Welcome ${username} to <strong>VIDA</strong> Selling App</h1>
         </header>
 
         <!-- Menu Bar -->
@@ -88,7 +27,7 @@
                 <a href="#">Products</a>
                 <a href="#">Sales</a>
                 <a href="#">Analytics</a>
-                <a href="#">Settings</a>
+                <a href="./about.html">About</a>
             </div>
             <div>
                 <div class="vida-section">
@@ -490,7 +429,7 @@
             <p>&copy; 2024 Your Shopping Store</p>
             <p>
                 <a href="./privacyPolicy.html">Privacy Policy</a>
-                <a href="#">Terms of Service</a>
+                <a href="./termsofservice.html">Terms of Service</a>
                 <a href="./about.html">About</a>
                 <a href="#">Help</a>
             </p>

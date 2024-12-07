@@ -129,6 +129,90 @@ header {
     color: #0a74da;
 }
 
+.vida-section {
+    width: 180px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: end;
+}
+
+.orders-link {
+    color: white;
+}
+
+.returns-text {
+    display: block;
+    font-size: 13px;
+}
+
+.orders-text {
+    display: block;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.cart-link {
+    color: white;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.cart-icon {
+    width: 50px;
+}
+
+.cart-text {
+    margin-top: 12px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.cart-quantity {
+    color: rgb(240, 136, 4);
+    font-size: 16px;
+    font-weight: 700;
+
+    position: absolute;
+    top: 10px;
+    left: 35px;
+
+    width: 26px;
+    text-align: center;
+}
+
+.header-link {
+    display: inline-block;
+    padding: 6px;
+    border-radius: 2px;
+    cursor: pointer;
+    text-decoration: none;
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.header-link:hover {
+    border: 1px solid white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .cta-buttons {
@@ -142,10 +226,15 @@ header {
 
     .featured-products {
         padding: 40px 20px;
+        margin-bottom: 100px;
     }
 
     .product-card {
         width: 90%;
+        /* height: 200px; */
+        margin-top: 120px;
+        margin-bottom: 30px;
+
     }
     .product-card img {
         width: 100%;

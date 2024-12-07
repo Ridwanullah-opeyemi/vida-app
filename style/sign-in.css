@@ -75,8 +75,15 @@ h3 {
 
     form {
         padding: 10px;
+        width: 70%;
     }
 }
+@media (max-width: 550px) {
+    form{
+        width: 85%;
+        margin: 180px auto;
+    }
+}  
 
 @media (max-width: 385px) {
     input {

@@ -78,8 +78,14 @@ h3 {
     }
 }
 
+@media (max-width: 550px) {
+    form{
+        margin: 150px auto;
+        width: 85%;
+    }
+}  
 @media (max-width: 385px) {
     input {
         margin-bottom: 0px;
     }
-}
+}           
