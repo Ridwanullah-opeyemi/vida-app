@@ -3,7 +3,7 @@ const section1 = document.querySelector(".sec1");
 const section2 = document.querySelector(".sec2");
 
 function loading() {
-    let width = 10;
+    let width = 100;
     const intervalId = setInterval(() => {
         if (width >= 100) {
             clearInterval(intervalId);
@@ -14,7 +14,7 @@ function loading() {
             load.style.width = width + "%";
             document.getElementById("loads").textContent = width + '%';
         }
-    }, 20);
+    }, 100);
 }
 
 loading();

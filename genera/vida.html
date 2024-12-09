@@ -8,8 +8,14 @@
     <link rel="stylesheet" href="../style/product.css">
     <link rel="stylesheet" href="../style/vida.css">
     <style>
+        header {
+            display: flex;
+            justify-content: space-around;
+        }
+
         header img {
-            width: 80px;
+            width: 45px;
+            height: 45px;
         }
     </style>
 </head>
@@ -17,12 +23,14 @@
 <body>
     <div class="sec1">
         <header>
-            <h1><img src="../image/l2.png" alt="logo">Welcome ${username} to <strong>VIDA</strong> Selling App</h1>
+            <img src="../image/l2.png" alt="logo">
+            <h1>Welcome ${username} to <strong>VIDA</strong> Selling App</h1>
         </header>
 
         <!-- Menu Bar -->
         <div class="menu-bar">
-            <div>
+            <div class="Store2" id="store02" onclick="menu_bar_store.style.display = 'block'; store02.style.display = 'none' ">≣</div>
+            <div class="sore01" id="sore01">
                 <a href="#">Home</a>
                 <a href="#">Products</a>
                 <a href="#">Sales</a>
@@ -44,6 +52,14 @@
                 </div>
             </div>
 
+        </div>
+        <div class="menu-bar-store" id="menu_bar_store">
+            <div class="cut" onclick="menu_bar_store.style.display = 'none'; store02.style.display = 'block'">X</div>
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">Sales</a>
+            <a href="#">Analytics</a>
+            <a href="./about.html">About</a>
         </div>
 
         <!-- Main Content -->
@@ -426,7 +442,7 @@
 
         <!-- Footer -->
         <footer class="footer">
-            <p>&copy; 2024 Your Shopping Store</p>
+            <p>&copy; 2025 <strong>VIDA</strong> Shopping Store</p>
             <p>
                 <a href="./privacyPolicy.html">Privacy Policy</a>
                 <a href="./termsofservice.html">Terms of Service</a>
