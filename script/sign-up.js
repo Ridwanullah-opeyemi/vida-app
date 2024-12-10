@@ -23,7 +23,7 @@ function validateForm() {
     const passwordr = document.getElementById("passwordr").value.trim();
 
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    const numberRegex = /^\d{11}$/;
+    const numberRegex =  /^(?:\+234\d{10}|234\d{10}|0(7|8|9)(0|1)\d{8})$/;
     const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/;
 
     emailError.textContent = '';
@@ -32,7 +32,7 @@ function validateForm() {
     passwordrError.textContent = '';
 
     if (!numberRegex.test(number)) {
-        numberError.textContent = "Invalid phone number format. Please enter a 10-digit number.";
+        numberError.textContent = "Invalid phone number format. Please enter Nigerian number.";
         return;
     }
 

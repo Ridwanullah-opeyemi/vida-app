@@ -1,6 +1,6 @@
 const load = document.querySelector(".loadf");
 const section1 = document.querySelector(".sec1");
-const section2 = document.querySelector(".sec2");
+const section2 = document.querySelector(".load");
 
 function loading() {
     let width = 100;
@@ -14,7 +14,7 @@ function loading() {
             load.style.width = width + "%";
             document.getElementById("loads").textContent = width + '%';
         }
-    }, 100);
+    }, 10);
 }
 
 loading();
