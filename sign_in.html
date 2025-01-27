@@ -1,0 +1,94 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-in</title>
+    <link rel="stylesheet" href="../style/load.css">
+    <link rel="stylesheet" href="../style/sign-in.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <section class="sec1">
+        <form id="signInForm">
+            <h3>Sign-in</h3>
+            <label for="signinEmail">Email: <input type="email" id="signinEmail"></label>
+            <div id="signinEmailError" class="error"></div>
+            <label for="signinPassword">Password: <input type="password" id="signinPassword"></label>
+            <div id="signinPasswordError" class="error"></div>
+            <button type="submit">Sign-in</button>
+            <div class="texts">Don't have an account? <a href="./sign_up.html">Sign-up</a></div>
+        </form>
+    </section>
+
+    <section class="load">
+        <div class="load-logo"><img src="../images/l2.png" alt="logo"> </div>
+        
+        <div id="load" class="sec2">
+            <div id="loads" class="loadf">0</div>
+        </div>
+        <div class="load-text" style="background-color: #4CAF50;" >VIDA APP</div>
+    </section>
+
+    <script src="../script/load.js"></script>
+    <script>
+        class SignIn {
+            constructor(formId, emailErrorId, passwordErrorId) {
+                this.signInForm = document.getElementById(formId);
+                this.emailError = document.getElementById(emailErrorId);
+                this.passwordError = document.getElementById(passwordErrorId);
+
+                this.signInForm.addEventListener('submit', (event) => {
+                    event.preventDefault();
+                    if (this.validateForm()) {
+                        this.signInUser();
+                    }
+                });
+            }
+
+            validateForm() {
+                const email = document.getElementById("signinEmail").value.trim();
+                const password = document.getElementById("signinPassword").value.trim();
+
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+                this.emailError.textContent = '';
+                this.passwordError.textContent = '';
+
+                if (!emailRegex.test(email)) {
+                    this.emailError.textContent = "Invalid email format. Please try again.";
+                    return false;
+                }
+
+                if (password === '') {
+                    this.passwordError.textContent = "Password cannot be empty.";
+                    return false;
+                }
+
+                return true;
+            }
+
+            signInUser() {
+                const email = document.getElementById("signinEmail").value.trim();
+                const password = document.getElementById("signinPassword").value.trim();
+
+                const users = JSON.parse(localStorage.getItem('Vuser')) || [];
+
+                const user = users.find(u => u.email === email && u.password === password);
+
+                if (user) {
+                    alert(`${user.username} has logged in successfully!`);
+                    window.location.href = "./vida.html";
+                } else {
+                    alert("Invalid email or password. Please try again.");
+                }
+            }
+        }
+
+        // Instantiate the SignIn class
+        new SignIn('signInForm', 'signinEmailError', 'signinPasswordError');
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel="shortcut icon" href="../images/vds-02.png" type="image/x-icon">
+    <link rel="stylesheet" href="../style/sign.css">
+</head>
+
+<body>
+
+    <div class="container" id="SignUpContainer">
+        <h2>Create Account</h2>
+        <form id="SignUpForm">
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="userName" required>
+            </div>
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <div id="emailError"></div>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="text" id="password" name="password" placeholder="Password" required>
+                <div id="passwordError"></div>
+            </div>
+            <div class="input-group">
+                <label for="rpassword">Confirm Password</label>
+                <input type="text" id="rpassword" name="rpassword" placeholder="Password" required>
+            </div>
+            <button type="submit">Create Account</button>
+            <div  id="EditError" style="color: crimson;">
+                
+            </div>
+            <div class="social-login">
+                <a href="#">G Google</a>
+            </div>
+            <div class="login-link">
+                Have an account? <div id="LogIn"><a href="#">sign in</a></div>
+            </div>
+        </form>
+
+    </div>
+
+    <div class="container" id="SignInContainer">
+        <h2>Sign in Account</h2>
+        <form id="signInForm">
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="text" id="password" name="password" placeholder="Password" required>
+            </div>
+            
+            <button type="submit">Sign in</button>
+            
+            <div  id="EditError" style="color: crimson;">
+                hhhhhh
+            </div>
+            
+            <div class="social-login">
+                <a href="#">G Google</a>
+            </div>
+            <div class="login-link">
+                Dont have an account? <div id="get"><a href="#">Get Here</a></a>
+            </div>
+        </form>
+
+    </div>
+
+    <script type="module" src="../script/sign.js"></script>
+
+</body>
+
+</html>

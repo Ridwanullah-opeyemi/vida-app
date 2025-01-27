@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up</title>
+    <link rel="stylesheet" href="../style/load.css">
+    <link rel="stylesheet" href="../style/sign-up.css">
+</head>
+
+<body>
+    <section class="sec1">
+        <form id="signUpForm">
+            <h3>Sign-up</h3>
+            <label for="names">Name: <input type="text" id="names" placeholder="user name"></label>
+            <label for="number">Phone Number: <input type="number" id="number" placeholder="phone number"></label>
+            <div id="numberError" class="error"></div>
+            <label for="email">Email: <input type="email" id="email" placeholder="email"></label>
+            <div id="emailError" class="error"></div>
+            <label for="password">Password: <input type="password" id="password" placeholder="password"></label>
+            <div id="passwordError" class="error"></div>
+            <label for="passwordr">Retry Password: <input type="password" id="passwordr" placeholder="retry password"></label>
+            <div id="passwordrError" class="error"></div>
+            <button type="submit">Submit</button>
+            <div class="texts">Already have an account <a href="./sign_in.html">Sign-in</a></div>
+        </form>
+    </section>
+
+    <section class="load">
+        <div class="load-logo"><img src="../images/l2.png" alt="logo"> </div>
+        
+        <div id="load" class="sec2">
+            <div id="loads" class="loadf">0</div>
+        </div>
+        <div class="load-text" style="background-color: #4CAF50;">VIDA APP</div>
+    </section>
+
+    <script src="../script/load.js"></script>
+    <script type="module" src="../script/sign-up.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
